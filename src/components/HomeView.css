@@ -1,0 +1,173 @@
+body {
+    background-color: #050b14;
+    font-family: 'Righteous', sans-serif;
+    margin: 0;
+}
+
+.hero-section {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-image: url('netflix-hero-200x600-darker-1.webp');
+    background-size: cover;
+    height: 70vh;
+}
+
+.logo {
+    font-family: "Rowdies", sans-serif;
+    position: absolute;
+    color: #008CBA;
+    font-size: 45px;
+    left: 20px;
+}
+
+.sign-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.sign-button button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.sign-button button:hover {
+    background-color: #0b6a8a;
+}
+
+.main-text {
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    text-align: center;
+}
+
+.price-text {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 23px;
+    margin-top: 30px;
+}
+
+.trending-section {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    margin-top: 50px;
+    font-size: 40px;
+    background-color: #04142d;
+    padding: 30px;
+}
+
+.movies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    background-color: #04142d;
+    margin: 0;
+    margin-bottom: 7px;
+}
+
+.movies img {
+    width: 180px;
+    height: 280px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+
+.movies img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #050b14;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    color: rgb(222, 222, 222);
+}
+
+.phone-number, footer a {
+    color: rgb(222, 222, 222);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .hero-text .logo {
+        font-size: 36px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .hero-text .main-text {
+        font-size: 30px;
+    }
+
+    .hero-text .price-text {
+        font-size: 18px;
+        top: 60%;
+    }
+
+    .trending-section {
+        font-size: 25px;
+    }
+
+    .movies img {
+        width: 150px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sign-button {
+        justify-content: space-around;
+    }
+
+    .sign-button button {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .hero-text .logo {
+        font-size: 28px;
+    }
+
+    .hero-text .main-text {
+        font-size: 20px;
+    }
+
+    .hero-text .price-text {
+        font-size: 12px;
+        top: 55%;
+    }
+
+    .trending-section {
+        font-size: 20px;
+    }
+
+    .movies img {
+        width: 120px;
+        height: 180px;
+    }
+}
