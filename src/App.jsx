@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomeView from "../src/components/HomeView";
-import DetailView from "../scr/components/DetailView";
-import GenreView from "../scr/components/GenreView";
-import LoginView from "../scr/components/LoginView";
-import MoviesView from "../scr/components/MoviesView";
-import RegisterView from "../scr/components/RegisterView";
-import './App.css'
+import HomeView from "../src/components/HomeView.jsx";
+import DetailView from "../src/components/DetailView.jsx";
+// import GenreView from "../src/components/GenreView.jsx";
+import LoginView from "../src/components/LoginView.jsx";
+import MoviesView from "../src/components/MoviesView.jsx";
+import RegisterView from "../src/components/RegisterView.jsx";
+import './App.css';
 
 function App() {
 
