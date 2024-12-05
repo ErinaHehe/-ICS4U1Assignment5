@@ -5,6 +5,12 @@ import "./HomeView.css";
 
 function HomeView() {
   const [movies, setMovies] = useState([]);
+  const genres = [
+    {
+      genre: "Action",
+      id: 28
+    }, // do this 10 times
+  ] 
 
   function shuffle(array) {
     let currentIndex = array.length;
@@ -43,8 +49,8 @@ function HomeView() {
       <div className="overlay"></div>
       <header>
         <div className="buttons">
-          <Link to={`/register`} className="button">Register</Link>
-          <Link to={`/login`} className="button">Login</Link>
+          <Link to={`/register`} className="button">Sign Up</Link>
+          <Link to={`/login`} className="button">Sign In</Link>
         </div>
       </header>
       <div className="hero-content">

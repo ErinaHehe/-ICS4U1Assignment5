@@ -11,16 +11,12 @@ function GenreView() {
 
   useEffect(() => {
     (async function getMovies() {
-      try {
-        const response = await axios.get(
-          `https://api.themoviedb.org/movie?api_key=${import.meta.env.VITE_TMDB_KEY}&with_genres=${genre_id}`
-        );
-        setMovies(response.data.results);
-      } catch (error) {
-        console.error("Error fetching movies:", error);
-      }
+      const response = await axios.get(
+        `https://api.themoviedb.org/3/movie/now_playing?api_key=${import.meta.env.VITE_TMDB_KEY}`
+      );
+      setMovies(response.data.results);
     })();
-  }, [genre_id, page]);
+  }, []);
 
   function loadMovie(id) {
     navigate(`/movies/${id}`);
