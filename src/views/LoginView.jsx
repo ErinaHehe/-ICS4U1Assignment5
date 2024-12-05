@@ -11,7 +11,7 @@ function LoginView() {
   function login(event) {
     event.preventDefault();
     if (password === "iloveyou") {
-      navigate('/movies/all');
+      navigate('/movies');
     } else {
       alert("Incorect password! Please try again.");
     }
