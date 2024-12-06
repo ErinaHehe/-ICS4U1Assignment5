@@ -59,7 +59,7 @@ function HomeView() {
       </div>
 
       <div className="feature">
-        <h2 className="featured-header">Featured Movies</h2>
+        <h2 className="featured-header">Trending Now</h2>
         <div className="movies-list">
           {movies.map((movie) => (
             <div key={movie.id} className="movie-card">
