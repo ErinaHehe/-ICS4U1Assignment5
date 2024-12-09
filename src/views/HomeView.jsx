@@ -9,43 +9,7 @@ function HomeView() {
     {
       genre: "Action",
       id: 28
-    },
-    {
-      genre: "Adventure",
-      id: 12
-    },
-    {
-      genre: "Animation",
-      id: 16
-    },
-    {
-      genre: "Comedy",
-      id: 35
-    },
-    {
-      genre: "Crime",
-      id: 80
-    },
-    {
-      genre: "Family",
-      id: 10751
-    },
-    {
-      genre: "Fantasy",
-      id: 14
-    },
-    {
-      genre: "History",
-      id: 36
-    },
-    {
-      genre: "Horror",
-      id: 27
-    },
-    {
-      genre: "Music",
-      id: 10402
-    },
+    }, // do this 10 times
   ] 
 
   function shuffle(array) {
@@ -95,7 +59,7 @@ function HomeView() {
       </div>
 
       <div className="feature">
-        <h2 className="featured-header">Featured Movies</h2>
+        <h2 className="featured-header">Trending Now</h2>
         <div className="movies-list">
           {movies.map((movie) => (
             <div key={movie.id} className="movie-card">
