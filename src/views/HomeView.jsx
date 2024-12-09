@@ -5,12 +5,6 @@ import "./HomeView.css";
 
 function HomeView() {
   const [movies, setMovies] = useState([]);
-  const genres = [
-    {
-      genre: "Action",
-      id: 28
-    }, // do this 10 times
-  ] 
 
   function shuffle(array) {
     let currentIndex = array.length;
